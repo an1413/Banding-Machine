@@ -1,6 +1,5 @@
 * {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #EAE8FE;
     margin: 0;
     box-sizing: border-box;
     padding: 0;
@@ -9,6 +8,10 @@
 
 ul {
     background-color: #fff;
+}
+
+body {
+    background-color: #EAE8FE;
 }
 
 button {
@@ -39,9 +42,7 @@ main {
     grid-template-areas: 
     "section1 section2"
     "section1 section3";
-    gap: 20px 28px;
-    background-color: #fff;
-    
+    gap: 20px 28px; 
 }
 section {
     background-color: #fff;
@@ -54,12 +55,23 @@ section {
 
 .section2 {
     grid-area: section2;
+    padding: 9px 27px;
 }
 
 .section3 {
     grid-area: section3;
 }
 
+/* grid-container-layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 94px;
+    grid-template-rows: 32px 32px 106px;
+    gap: 12px;
+    margin-top: 20px ;
+}
+
+/*  */
 
 .cola-list {
     display: grid;
@@ -96,3 +108,88 @@ border-radius: 10px;
     font-size: 12px;
     line-height: 100%;
 }
+
+.balance-box {
+    padding: auto 10px;
+    display: flex;
+    border-radius: 5px;
+    background-color: #EAE8FE;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+}
+
+.balance-box h2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.insert-money {
+    padding: 6px 6px 7px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    color: #BDBDBD;
+}
+
+
+.grid-container .btn {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.get-list {
+    background: #eae8fe;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd;
+    overflow-y: auto;
+    padding: 12px;
+    
+}
+
+.get-list li {
+    background: #fff;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.get-list li:first-child ~ li {
+    margin-top: 6px;
+}
+
+.get-list li strong {
+    font-size: 14px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: auto;
+    /* margin: auto 0 auto auto; */
+}
+
+
+.get-btn {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #fff;
+    background-color: #6327FE;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
