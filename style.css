@@ -1,5 +1,6 @@
 * {
     font-family: 'Noto Sans KR', sans-serif;
+    background-color: #EAE8FE;
 }
 
 .cola-logo {
@@ -26,13 +27,14 @@ main {
 }
 
 .section1 {
+    background-color: #fff;
 
 }
 
 .section2 {
-
+    background-color: #fff;
 }
 
 .section3 {
-
+    background-color: #fff;
 }
