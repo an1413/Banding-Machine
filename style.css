@@ -1,6 +1,21 @@
 * {
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #EAE8FE;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    background-color: #fff;
+}
+
+button {
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
 }
 
 .cola-logo {
@@ -13,6 +28,7 @@
     /* max-width: calc(100% - (97px * 2)); */
 }
 
+
 /* layout */
 main {
     margin: 0 auto;
@@ -24,17 +40,59 @@ main {
     "section1 section2"
     "section1 section3";
     gap: 20px 28px;
+    background-color: #fff;
+    
+}
+section {
+    background-color: #fff;
 }
 
 .section1 {
-    background-color: #fff;
-
+    grid-area: section1;
+    padding: 31px 27px 28px;
 }
 
 .section2 {
-    background-color: #fff;
+    grid-area: section2;
 }
 
 .section3 {
+    grid-area: section3;
+}
+
+
+.cola-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+
+}
+
+.cola-list li {
+    text-align: center;
+}
+
+.select-cola {
+    padding: 11px 12px 9px;
     background-color: #fff;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+border-radius: 10px;
+}
+
+.cola-list li img {
+}
+
+.cola-list li span {
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+}
+
+.cola-list li strong {
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
 }
