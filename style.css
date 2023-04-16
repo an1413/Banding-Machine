@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     list-style: none;
+    
 }
 
 ul {
@@ -43,6 +44,7 @@ main {
     "section1 section2"
     "section1 section3";
     gap: 20px 28px; 
+    margin-bottom: 171px;
 }
 section {
     background-color: #fff;
@@ -164,6 +166,11 @@ border-radius: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
+    height: 46px;
+}
+
+.get-list img {
+    max-width: 20px;
 }
 
 .get-list li:first-child ~ li {
@@ -193,3 +200,17 @@ border-radius: 10px;
     border-radius: 5px;
 }
 
+.section3 h2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+}
+
+.section3 .get-list {
+    margin: 0 25px;
+    width: 306px;
+    height: 364px;
+}
